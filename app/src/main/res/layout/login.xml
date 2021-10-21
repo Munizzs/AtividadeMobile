@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/animelog"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradientebackgroud"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="117sp"
+            android:layout_marginTop="40sp"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90sp"
+            android:text="Login to your Account"
+            android:textColor="#E4ad00"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/EDT_Email"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/edt_fundo"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="18dp" />
+
+        <EditText
+            android:id="@+id/EDT_Senha"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/edt_fundo"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="18dp" />
+
+        <Button
+            android:id="@+id/BTN_Logar"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:layout_marginTop="40sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/edt_fundo"
+            android:text="Sign in" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="40sp"
+                android:background="@drawable/facebooklogo" />
+
+            <ImageButton
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="100sp"
+                android:layout_marginTop="40sp"
+                android:background="@drawable/googlelogo" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BTN_EsqueceuSenha"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:text="don't have an account? Sign Up"
+            android:textColor="#E4ad00"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
